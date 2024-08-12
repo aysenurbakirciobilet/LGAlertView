@@ -3,8 +3,6 @@
 
 import PackageDescription
 
-import PackageDescription
-
 let package = Package(
     name: "LGAlertView",
     platforms: [
@@ -19,7 +17,7 @@ let package = Package(
         .target(
             name: "LGAlertView",
             path: "Sources/LGAlertView",
-            publicHeadersPath: "include",
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("Sources/LGAlertView")
             ]
@@ -30,4 +28,5 @@ let package = Package(
         ),
     ]
 )
+
 
